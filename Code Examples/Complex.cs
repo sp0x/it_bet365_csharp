@@ -63,7 +63,22 @@ namespace app2
         {
             return false;
         }
-         
+
+        public Complex this[float key]
+        {
+            get
+            {
+                //Example of n-th element
+                //return someElement[key];
+                return new Complex(1,1); 
+            }
+            set
+            {
+                //Set the element matching to `key`
+                //someElement[key] = value;
+            }
+        } 
+
 
         /// <summary>
         /// By overloading == you should also override the != operator
